@@ -25,5 +25,7 @@ include CORE.'/common/function.php';
 
 //加载核心文件
 include CORE.'/imooc.php';
+
+spl_autoload_register('\core\imooc::load');
 \core\imooc::run();
 //p(IMOOC);
